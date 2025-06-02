@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <!-- icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
     <title>trafalgar</title>
   </head>
   <body>
@@ -22,9 +28,15 @@
           <li><a href="#">About us</a></li>
         </ul>
       </nav>
+
+      <div id="icons">
+        <i class="bx bx-menu"></i>
+      </div>
     </header>
+    <!-- hero section end here -->
 
     <main>
+      <!-- Hero -->
       <section id="hero">
         <div class="hero_pattern">
           <img src="./assets/element.svg" alt="" />
@@ -40,233 +52,283 @@
             <button>Consult today</button>
           </div>
           <div class="main_hero_img">
-            <img src="./assets/illustration.svg" alt="" />
+            <img src="./assets/hero_main_img.svg" alt="" />
           </div>
         </div>
       </section>
-    </main>
-    <!-- hero section ends here -->
+      <!-- Hero -->
 
-    <!-- our service -->
-    <section class="our_service">
-      <h2>Our Service</h2>
-      <img id="our_service_img" src="./assets/Rectangle 2.svg">
-      <p>
-        We provide to you the best choiches for you. Adjust it to your health
-        needs and make sure your undergo treatment with our highly qualified
-        doctors you can consult with us which type of service is suitable for
-        your health
-      </p>
+      <!-- Services -->
+      <section id="services">
+        <div id="services_title">
+          <h2>Our Services</h2>
+          <div class="line"></div>
+          <p>
+            We provide to you the best choiches for you. Adjust it to your
+            health needs and make sure your undergo treatment with our highly
+            qualified doctors you can consult with us which type of service is
+            suitable for your health
+          </p>
+        </div>
 
-      <div class="service_top">
-        <div class="service_container">
-          <div class="service_card1">
-            <img src="./assets/Frame.svg" alt="" />
-            <h3>Search doctor</h3>
-            <div>
-              Choose your doctor from thousands of specialist, general, and
-              trusted hospitals
+        <div id="services_main_container">
+          <!-- Blob Design -->
+          <img src="./assets/blob.svg" alt="Design Elements" id="blob" />
+          <!-- Service Boxes -->
+          <div id="services_box_container">
+            <div id="service_box">
+              <img src="./assets/search.svg" alt="Search Services" />
+              <h3>Search doctor</h3>
+              <small
+                >Choose your doctor from thousands of specialist, general, and
+                trusted hospitals</small
+              >
+            </div>
+            <div id="service_box">
+              <img src="./assets/service_main_img2.svg" alt="Search Services" />
+              <h3>Search doctor</h3>
+              <small
+                >Choose your doctor from thousands of specialist, general, and
+                trusted hospitals</small
+              >
+            </div>
+            <div id="service_box">
+              <img src="./assets/service_main_img3.svg" alt="Search Services" />
+              <h3>Search doctor</h3>
+              <small
+                >Choose your doctor from thousands of specialist, general, and
+                trusted hospitals</small
+              >
+            </div>
+            <div id="service_box">
+              <img src="./assets/service_main_img4.svg" alt="Search Services" />
+              <h3>Search doctor</h3>
+              <small
+                >Choose your doctor from thousands of specialist, general, and
+                trusted hospitals</small
+              >
+            </div>
+            <div id="service_box">
+              <img src="./assets/service_main_img5.svg" alt="Search Services" />
+              <h3>Search doctor</h3>
+              <small
+                >Choose your doctor from thousands of specialist, general, and
+                trusted hospitals</small
+              >
+            </div>
+            <div id="service_box">
+              <img src="./assets/service_main_img6.svg" alt="Search Services" />
+              <h3>Search doctor</h3>
+              <small
+                >Choose your doctor from thousands of specialist, general, and
+                trusted hospitals</small
+              >
             </div>
           </div>
+          <!-- Pattern Design -->
+          <img
+            src="./assets/service_pattern.svg"
+            alt="Design Elements"
+            id="pattern"
+          />
         </div>
-        <div class="service_container">
-          <div class="service_card1">
-            <img src="./assets/Frame (1).svg" alt="" />
-            <h3>Online pharmacy</h3>
-            <div>
-              Buy your medicines with our mobile application with a simple
-              delivery system
+
+        <div id="services_button">
+          <button class="special_button">Learn More</button>
+        </div>
+      </section>
+      <!-- Services -->
+
+      <!-- Health -->
+      <section id="health">
+        <div id="health_img">
+          <img
+            src="./assets/health_pro.svg"
+            alt="Health practioners ready to deliver"
+          />
+        </div>
+        <div id="health_details">
+          <h2>Leading healthcare providers</h2>
+          <div class="line"></div>
+          <p>
+            Trafalgar provides progressive, and affordable healthcare,
+            accessible on mobile and online for everyone. To us, it’s not just
+            work. We take pride in the solutions we deliver
+          </p>
+          <button class="special_button">Learn More</button>
+        </div>
+      </section>
+      <!-- Health -->
+
+      <!-- Download App -->
+      <section id="download_app">
+        <img
+          src="./assets/download_app_pattern.svg"
+          alt=""
+          id="download_app_pattern"
+        />
+        <div id="download_app_details">
+          <h2>Leading healthcare providers</h2>
+          <div class="line"></div>
+          <p>
+            Trafalgar provides progressive, and affordable healthcare,
+            accessible on mobile and online for everyone. To us, it’s not just
+            work. We take pride in the solutions we deliver
+          </p>
+          <button class="special_button">Learn More</button>
+        </div>
+        <div id="download_app_img">
+          <img
+            src="./assets/download_app_img.svg"
+            alt="Health practioners ready to deliver"
+          />
+        </div>
+      </section>
+      <!-- Health -->
+
+      <section class="testimonial">
+        <img
+          src="./assets/testimonial_pattern1.svg"
+          alt="testimonial_pattern"
+          class="testimonial_pattern"
+        />
+
+        <div class="testimonial_container">
+          <div class="testimonial_title">
+            <h2>What our customer are saying</h2>
+          </div>
+
+          <div class="line2">
+            <img src="./assets/line2.svg" alt="">
+          </div>
+          <div class="testimonial_detail">
+            <div class="customer">
+              <img src="./assets/Edwards face.svg" alt="" />
+              <div class="testimonial_name">
+                <h3>Edward Newgate</h3>
+
+                <small>Founder Circle</small>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="service_container">
-          <div class="service_card1">
-            <img src="./assets/Frame (3).svg" alt="" />
-            <h3>Consultation</h3>
-            <div>
-              Free consultation with our trusted doctors and get the best
-              recomendations
+
+            <div class="testimonial_main">
+              <p>
+                “Our dedicated patient engagement app and web portal allow you to
+                access information instantaneously (no tedeous form, long calls,
+                or administrative hassle) and securely”
+              </p>
             </div>
+
           </div>
+
+         
+
+          <img
+            src="./assets/testimonial_pattern2.svg"
+            alt="testimonial_pattern"
+            id="testimonial_pattern2"
+          />
         </div>
-      </div>
-
-      <div class="service_bottom">
-        <div class="service_container">
-          <div class="service_card1">
-            <img src="./assets/Frame (8).svg" alt="" />
-            <h3>Details info</h3>
-            <div>
-              Free consultation with our trusted doctors and get the best
-              recomendations
-            </div>
-          </div>
-        </div>
-        <div class="service_container">
-          <div class="service_card1">
-            <img src="./assets/Frame (9).svg" alt="" />
-            <h3>Emergency care</h3>
-            <div .secv>
-              You can get 24/7 urgent care for yourself or your children and
-              your lovely family
-            </div>
-          </div>
-        </div>
-        <div class="service_container">
-          <div class="service_card1">
-            <img src="./assets/Frame (9).svg" alt="" />
-            <h3>Tracking</h3>
-            <div>Track and save your medical history and health data</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="products">
-        <!-- <div class="vector_img"> -->
-          <img src="./assets/Vector.svg" class="vector_img"/>
-        <!-- </div> -->
-        <img id="Vector2_img" src="./assets/element (1).svg" alt="" />
-      
-
-      <button>Learn more</button>
-      
-      
-    </section>
-    <!-- our service ends here -->
-
-    <!--leading healthcare start here -->
-    <div class="healthcare">
-      <div class="healthcare_left">
-        <img src="./assets/trafalgar-illustration sec02 1.svg" alt="">
-      </div>
-      <div class="healthcare_right">
-        <h1>Leading healthcare providers</h1>
-        <div><img src="./assets/Rectangle 11.svg" alt=""></div>
-        <p>Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone. To us, it’s not just work. We take pride 
-          in the solutions we deliver</p>
-      </div>
-      <button>Learn more</button>
-    </div>
-    <!--leading healthcare ends here -->
-
-    <!-- Download start here -->
-     <div class="download">
-      <img src="./assets/element (2).svg" alt="">
-
-      <div class="download_left">
-        <h2>Download our 
-          mobile apps</h2>
-          <div> <img src="./assets/Rectangle 12.svg" alt=""></div>
-          <p>Our dedicated patient engagement app and 
-            web portal allow you to access information instantaneously (no tedeous form, long calls, 
-            or administrative hassle) and securely</p>
-      </div>
-      <div class="download_right">
-        <img src="./assets/trafalgar-illustration sec03 1.svg" alt="">       
-      </div>
-      <button>Download &#8595;</button>
-     </div>
-    <!-- Download ends here -->
-
-    <!-- testimonial starts here -->
-     <div class="testimonial">
-      <img src="./assets/Group (1).svg" alt="">
-
-      <div class="testimonia_main">
-        <h2>What our customer are saying</h2>
-        <img src="./assets/Rectangle 17.svg" alt="">
-        <img src="./assets/Group (2).svg" alt="">
-      </div>
-      <div class="testimonial_content">
-        <div class="testimonia_content_left">
-          <img src="./assets/Mask Group.svg" alt="">
-          <h3>Edward Newgate</h3>
-          <p>Founder Circle</p>
-        </div>
-
-        <div class="testimonail_content_right">
-          <p>“Our dedicated patient engagement app and 
-            web portal allow you to access information instantaneously (no tedeous form, long calls, 
-            or administrative hassle) and securely”</p>
-        </div>
-      </div>
-
-      <img src="./assets/arrow nav.svg" alt="">
-     </div>
-    <!-- testimonial endss here -->
-
-    <!-- article starts here -->
-     <div class="article">
-      <h2>Check out our latest article</h2>
-      <img id="article_img" src="./assets/Rectangle 18.svg" alt="">
-      <img src="./assets/element (3).svg" alt="">
-      <div class="article_main">
-        <div class="article1">
-          <div><img src="./assets/Mask Group (1).svg" alt=""></div>
-          <h3>Disease detection, check 
-            up in the laboratory</h3>
-            <p>In this case, the role of the health laboratory is very important to do
-              a disease detection...</p>
-              <button>Read more &#8594;</button>
-        </div>
-        <div class="article2">
-          <div><img src="./assets/Mask Group (2).svg" alt=""></div>
-          <h3>Herbal medicines that are 
-            safe for consumption</h3>
-            <p>Herbal medicine is very widely used at this time because of its very good for your health...</p>
-              <button>Read more &#8594;</button>
-        </div>
-        <div class="article3">
-          <div><img src="./assets/Mask Group (6).svg" alt=""></div>
-          <h3>Natural care for healthy 
-            facial skin</h3>
-            <p>A healthy lifestyle should start from now and also for your skin health.
-              There are some...</p>
-              <button>Read more &#8594;</button>
-        </div>
-        <img src="./assets/Vector (1).svg" alt="">
-      </div>
-      <button>View all</button>
-     </div>
-    <!-- article ends here -->
-
-  </body>
-
-  <footer>
-    <img src="./assets/element (5).svg" alt="">
-    <div class="footer_main">
-      <img src="./assets/Ellipse 8.svg" alt=""><span>Trafalgar</span>
-      <p>Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online 
-        for everyone
-      </p>
-      <p>©Trafalgar PTY LTD 2020. All rights reserved</p>
-
-        <div class="company">
-          <h3>Company</h3>
-          <span>About</span>
-          <span>Testimonials</span>
-          <span>Find a doctor</span>
-          <span>Apps</span>
-        </div>
+            <img src="./assets/testimonail_navigation.svg" alt="testimonail_navigation" id="testimonail_navigation">
         
-        <div class="Region">
-          <h3>Region</h3>
-          <span>Indonesia</span>
-          <span>Singapore</span>
-          <span>Hongkong</span>
-          <span>Canada</span>
+
+      </section>
+
+      <section class="article" >
+        <div class="article_title">
+          <h2>Check out our latest article</h2>
+          <div class="line"></div>
+        </div>
+        <div class="article_main_content">
+          <img src="./assets/article_design.svg" alt="article_design" id="article_design">
+
+          <div class="artiles_types">
+            <img src="./assets/article_img1.svg" alt="a nurse collecting blood sample" id="article_img1">
+            <h3>Disease detection, check 
+              up in the laboratory</h3>
+              <p>In this case, the role of the health laboratory is very important to do
+                a disease detection...</p>
+                <button>Read more &#x2192;</button>
+          </div>
+
+          <div class="artiles_types">
+            <img src="./assets/article_img3.svg" alt="a nurse collecting blood sample" id="article_img1">
+            <h3>Disease detection, check 
+              up in the laboratory</h3>
+              <p>In this case, the role of the health laboratory is very important to do
+                a disease detection...</p>
+                <button>Read more &#x2192;</button>
+          </div>
+
+           <div class="artiles_types">
+            <img src="./assets/article_img4.svg" alt="a nurse collecting blood sample" id="article_img1">
+            <h3>Disease detection, check 
+              up in the laboratory</h3>
+              <p>In this case, the role of the health laboratory is very important to do
+                a disease detection...</p>
+                <button>Read more &#x2192;</button>
+          </div>
+
+          <img src="./assets/article_img2.svg" alt="" id="article_img2">
+
+        </div>
+        <div class="article_button">        <button>View all</button>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+     <footer>
+
+      <div class="footer">
+
+        <div class="footer_container">
+          <div class="main_footer_contant">
+
+            <div class="footer_logo">
+              <img src="./assets/image.png" alt=""><br>
+              <p>Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online 
+                for everyone</p><br>
+                <p>©Trafalgar PTY LTD 2020. All rights reserved</p>
+  
+            </div>
+
+            <div class="footer_list">
+
+              <div class="company">
+                <span>Company</span><br><br>
+                <span>About</span><br>
+                <span>Testimonials</span><br>
+                <span>Find a doctor</span><br>
+                <span>Apps</span>
+              </div>
+              <div class="region">
+                <span>Region</span><br><br>
+                <span>Indonesia</span><br>
+                <span>Singapore</span><br>
+                <span>Hongkong</span><br>
+                <span>Canada</span><br>
+                </div>
+              <div class="help">
+                <span>Help</span><br><br>
+                <span>Help center</span><br>
+                <span>Contact support</span><br>
+                <span>Instructions</span><br>
+                <span>How it works</span><br>
+              </div>
+    
+  
+              
+            </div>
+                      </div>
+          <img src="./assets/footer_img.svg" alt="">
+
+        </div>
+  
         </div>
 
-        <div class="help">
-          <h3>Help</h3>
-          <span>Help center</span>
-          <span>Contact support</span>
-          <span>Instructions</span>
-          <span>How it works</span>
-        </div>
-
-        <img src="./assets/element (7).svg" alt="">
-    </div>
-
-  </footer>
+        
+     </footer>
+    <!-- footer -->
+  </body>
 </html>

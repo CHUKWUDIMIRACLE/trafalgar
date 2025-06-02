@@ -5,14 +5,48 @@
   font-style: normal;
 }
 
-body {
-  font-family: "muli", sans-serif;
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/* Utility Class */
+.line {
+  width: 56px;
+  height: 2px;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-block: 26px;
+  margin-inline: auto;
+}
+
+.special_button {
+  width: 200px;
+  height: 60px;
+  border: 1.4px solid #458ff6;
+  color: #458ff6;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: transparent;
+  border-radius: 999px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.special_button:hover {
+  background-color: #458ff6;
+  color: #fff;
+}
+/* Utility Class */
+
+body {
+  font-family: "muli", sans-serif;
+  color: #7d7987;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 ul {
@@ -33,7 +67,15 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 50px 150px;
-  margin-bottom: 84px;
+}
+
+header #icons {
+  display: none;
+}
+
+header #icons i {
+  font-size: 35px;
+  border: 1px solid #458ff6;
 }
 
 nav ul {
@@ -58,7 +100,7 @@ main #hero .main_hero_content {
 }
 
 main #hero .main_hero_content .main_hero_img {
-    padding: 30px;
+  padding: 30px;
 }
 
 main #hero .main_hero_content .main_hero_img img {
@@ -66,100 +108,640 @@ main #hero .main_hero_content .main_hero_img img {
   height: auto;
 }
 
-main .main_hero_details h1{
+.main_hero_details button {
+  border: #458ff6;
+}
+
+main .main_hero_details h1 {
+  font-weight: 700;
+  line-height: 56px;
+  font-size: 48px;
+  margin-bottom: 29px;
+  width: 426px;
+  color: black;
+  margin-top: 186px;
+}
+
+main .main_hero_details p {
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 32px;
+  width: 470px;
+  margin-bottom: 45px;
+}
+
+main .main_hero_details button {
+  width: 200px;
+  height: 56px;
+  border-radius: 999px;
+  background-color: #458ff6;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-family: "muli", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+main .main_hero_details button:hover{
+  background-color: #fff;
+  color: #458ff6;
+}
+
+/* Services Styling */
+main #services {
+  min-height: 100vh;
+  margin-top: 170px;
+}
+
+main #services_title {
+  width: 50%;
+  margin-inline: auto;
+  text-align: center;
+}
+
+main #services_title h2 {
+  font-size: 36px;
+  line-height: 56px;
+  font-weight: 700;
+  color: #000;
+}
+
+main #services_title p {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 300;
+  width: 100%;
+}
+
+main #services_main_container {
+  margin-top: 90px;
+  position: relative;
+}
+
+main #services_main_container #services_box_container {
+  width: 70%;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 37px;
+  z-index: 9;
+}
+
+#services_box_container #service_box {
+  width: 350px;
+  height: 354px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px #00000066;
+  border-radius: 10px;
+  padding: 38px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 20px;
+}
+
+#services_box_container #service_box > img {
+  height: 50px;
+}
+
+#services_box_container #service_box h3 {
+  font-size: 24px;
+  line-height: 56px;
+  color: #000;
+  font-weight: 700;
+}
+
+#services_box_container #service_box small {
+  font-size: 16px;
+  line-height: 28px;
+  width: 90%;
+}
+
+main #services_main_container #blob {
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  top: -20%;
+}
+
+main #services_main_container #pattern {
+  position: absolute;
+  right: 8%;
+  top: 35%;
+  z-index: -1;
+}
+
+main #services #services_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-block: 60px;
+}
+
+/* Services Styling */
+
+/* Health Styling */
+main #health {
+  min-height: max-content;
+  padding-inline: 135px;
+  padding-block: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+
+main #health_details {
+  width: 35%;
+  margin-inline: auto;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+}
+
+main #health_details h2 {
+  font-size: 36px;
+  line-height: 56px;
+  font-weight: 700;
+  color: #000;
+}
+
+main #health_details p {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 300;
+  width: 100%;
+}
+
+main #health_details .line {
+  margin-left: 0%;
+}
+
+main #health_details .special_button {
+  margin-top: 37px;
+}
+
+/* Health Styling */
+
+/* Download app Styling */
+main #download_app {
+  min-height: max-content;
+  padding-inline: 135px;
+  padding-block: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  position: relative;
+}
+
+main #download_app #download_app_pattern {
+  position: absolute;
+  top: -100px;
+  right: 0;
+}
+
+main #download_app_details {
+  width: 35%;
+  margin-inline: auto;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+}
+
+main #download_app_details h2 {
+  font-size: 36px;
+  line-height: 56px;
+  font-weight: 700;
+  color: #000;
+}
+
+main #download_app_details p {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 300;
+  width: 100%;
+}
+
+main #download_app_details .line {
+  margin-left: 0%;
+}
+
+main #download_app_details .special_button {
+  margin-top: 37px;
+}
+
+/* Download App Styling */
+
+/* testimonial */
+
+.testimonial_container {
+  background-color: #5a98f2;
+  min-height: 50vh;
+  width: 80%;
+  margin-left: 150px;
+  border-radius: 20px;
+  position: relative;
+}
+
+#testimonial_pattern{
+  position: absolute;
+  left: 109px;
+  padding-top: 190px;
+}
+
+.testimonial_title h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  color: #ffffff;
+  padding-block: 30px;
+  text-align: center;
+}
+
+.testimonial_name{
+  padding-block: 50px;
+}
+
+.testimonial_main p{
+  width: 420px;
+  height: 120px;
+}
+
+.testimonial_detail{
+ display: flex;
+ gap: 100px;
+ justify-content: center;
+ color: #fff;
+ align-items: center;
+}
+
+.customer{
+  display: flex;
+  gap: 20px;
+}
+
+#testimonial_pattern2{
+position: absolute;
+top: 12px;
+right: -55px;
+}
+
+#testimonail_navigation{
+  padding-inline: 35%;
+  padding-bottom: 216px;
+}
+
+.line2{
+margin-left: 49%;
+padding-bottom: 10px;
+}
+/* testimonial */
+
+.article_main_content{
+  mmin-height: 90vh;
+  position: relative;
+
+}
+
+.article_title .line{
+  margin-bottom: 60px;
+}
+
+.article h2{
+font-weight: 700;
+font-size: 36px;
+line-height: 56 px;
+color: #000000;
+text-align: center;
+}
+
+#article_design{
+  position: absolute;
+  top: -29px;
+  left: -40px;
+  
+}
+
+#article_img2{
+  position: absolute;
+  right: -200px;
+  z-index: -1;
+}
+
+.article_main_content{
+width: 70%;
+margin-inline: auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 37px; */
+
+}
+
+.artiles_types h3{
+  color: black;
+  font-weight: 700;
+  font-size: 21px;
+  width: 357px;
+  padding-inline: 20px;
+
+}
+
+.artiles_types p{
+  font-weight: 300;
+  font-size: 16px;  
+  line-height: 28px;
+  width: 340px;
+  padding-inline: 20px;
+}
+
+.artiles_types button{
+  background: none;
+  color: #458ff6;
+  border: none;
+  padding-inline: 20px;
+  padding-bottom: 69px;
+
+}
+
+.article_button button{
+  width: 200px;
+  height: 60px;
+  border: 1.4px solid #458ff6;
+  color: #458ff6;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: transparent;
+  border-radius: 999px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  margin-inline: 40%;
+  margin-bottom: 129px;
+
+}
+
+.article_button button:hover{
+  background-color: #458ff6;
+  color: #fff;
+  margin-bottom: 199px;
+
+}
+
+/* footer */
+.footer_container{
+  width: 100%;
+  height: auto;
+  background-color: #5A98F2;
+  color: #fff;
+  
+}
+
+.main_footer_contant{
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  align-items: center;
+  margin: 30px 190px;
+  padding-top: 118px;
+}
+
+.footer_logo{
+  width: 391px;
+  201px;
+  
+}
+
+
+/* footer */
+
+
+
+
+/* Media Query */
+@media (max-width: 700px) {
+  header {
+    padding: 50px 35px;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  header #icons {
+    display: block;
+  }
+
+  main #hero {
+    padding-inline: 35px;
+  }
+
+  main #hero .main_hero_content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  main .main_hero_details h1 {
+    width: auto;
+  }
+
+  main .main_hero_details p {
+    width: auto;
+  }
+
+  main #services {
+    margin-top: 50px;
+  }
+
+  main #services_title {
+    width: 100%;
+    padding-inline: 35px;
+  }
+
+  main #hero .main_hero_content .main_hero_img {
+    padding: 0;
+  }
+
+  main #hero .main_hero_content .main_hero_img img {
+    width: 100%;
+  }
+
+  main #services_main_container #services_box_container {
+    width: 100%;
+    padding-inline: 35px;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 37px;
+    z-index: 9;
+  }
+
+#blob {
+  display: none;
+}
+
+  #services_box_container #service_box {
+    width: 100%;
+  }
+
+  main #health {
+    padding-inline: 35px;
+    padding-block: 50px;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  main #health #health_img img {
+    width: 100%;
+  }
+
+  main #health_details {
+    width: 100%;
+  }
+
+  main #download_app {
+    padding-inline: 35px;
+    padding-block: 50px;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  main #download_app_details {
+    width: 100%;
+  }
+
+  main #download_app_img img {
+    width: 100%;
+  }
+
+/* testimonial */
+
+.testimonial_container {
+  width: 90%;
+  height: 100hv;
+  margin-left: 20px;
+}
+
+#testimonail_navigation{
+  padding-inline: 11%;
+  width: 350px;
+  margin-top: 15px;
+  padding-bottom: 216px;
+}
+
+.testimonial_pattern {
+display: none;
+}
+
+.testimonial_title h2 {
+font-weight: 400;
+font-size: 33px;
+line-height: 44px;
+}
+
+.line2 {
+display: none;
+}
+
+.customer img{
+width: 90px;
+}
+
+.testimonial_main p {
+width: 300px;
+margin-bottom: 12px;
+}
+
+.testimonial_detail{
+flex-direction: column;
+gap: 20px;
+
+}
+
+/* testimonial */
+
+  /* article */
+
+  .article h2{
     font-weight: 700;
-    line-height: 56px;
-    font-size: 48px;
-    margin-bottom: 29px;
-    width: 426px;
-}
-
-main .main_hero_details p{
-    font-weight: 300;
-    font-size: 21px;
-    line-height: 32px;
-    width: 470px;
-    margin-bottom: 45px;
-}
-
-main .main_hero_details button{
-    width: 200px;
-    height: 56px;
-    border-radius: 999px;
-    background-color: #458FF6;
-    border: none;
-    color: #fff;
-}
-
-main .main_hero_details h1{
-    margin-top: 186px;
-}
-
-/* our service */
-
-.our_service h2{
     font-size: 36px;
-    font-weight: 700;
-    line-height: 56px;
-    text-align: center;
+    line-height: 56 px;
+    text-align: left;
+    padding-inline: 30px;
+  }
+
+  .article_title .line{
+    margin: 50px;
+  }
+
+  #article_design {
+    display: none;
+  }
+
+.article_main_content{
+  width: 70%;
+  padding-inline: 0px;
+  flex-direction: column;
+  align-items: center;
+  gap: 27px; 
+  
+  }
+
+  .article_button button{
+    margin-inline: 10%;
+    margin-bottom: 129px;
+  }
+
+  #article_img2 {
+    display: none;
+  }
+
+  /* article */
+
+/* footer */
+
+.footer_container {
+width: 90%;
+margin-left: 20px;
 }
 
-.our_service {
-    position: relative;
+.footer_logo img{
+margin-inline: 10px;  
 }
 
-.our_service p{
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 30px;
-    padding: 30px 280px;
+.footer_logo p {
+  margin-inline: 10px;  
+  width: 334.7px;
 }
 
-.our_service #our_service_img{
-    padding-left: 770px;
+.main_footer_contant {
+  flex-direction: column;
+  gap: 50px;
 }
 
-.service_card1{
-    width: 350px;
-    padding: 54px 30px;
+.main_footer_contant .company {
+  text-align: left;
 }
 
-.service_top{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 60px;
+.footer_list{
+margin-left: -190px;
+
+
 }
 
-.service_bottom{
-    display: flex;
-    justify-content: center;
-    gap: 60px;    
+/* footer */
+
+
+
+
+
+
+
 }
-
-.vector_img {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    z-index: 0;
-    background-color: red;
-}
-
-#Vector2_img{
-    position: absolute;
-    right: -200px;
-    top: 0;
-    z-index: 0;
-    background-color: red;
-
-.our_service button{
-    width: 200px;
-    height: 60px;
-    border: 1px solid #458FF6;
-    color: #458FF6;
-    background: none;
-    border-radius: 999px;
-    margin-left: 751px;
-}
-
-/* our service ends here */
+/* Media Query */
