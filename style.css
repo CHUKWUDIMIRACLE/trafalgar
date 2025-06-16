@@ -516,7 +516,11 @@ gap: 37px; */
 .footer_logo{
   width: 391px;
   201px;
-  
+}
+
+.footer_list {
+  display: flex;
+  gap: 70px;
 }
 
 
@@ -731,6 +735,7 @@ margin-inline: 10px;
 
 .footer_list{
 margin-left: -190px;
+flex-direction: column;
 
 
 }
