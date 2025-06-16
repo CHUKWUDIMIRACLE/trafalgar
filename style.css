@@ -731,11 +731,11 @@ width: 100%;
 }
 
 .footer_logo img{
-margin-inline: 3px;  
+margin-inline: 5px;  
 }
 
 .footer_logo p {
-  margin-inline: 3px;  
+  margin-inline: 5px;  
   width: 334.7px;
 }
 
@@ -749,7 +749,7 @@ margin-inline: 3px;
 }
 
 .footer_list{
-margin-left: -250px;
+margin-left: -230px;
 flex-direction: column;
 
 }
