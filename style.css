@@ -519,6 +519,10 @@ gap: 37px; */
   
 }
 
+.footer_list {
+  display: flex;
+  gap: 60px;
+}
 
 /* footer */
 
@@ -732,9 +736,11 @@ margin-inline: 10px;
 .footer_list{
 margin-left: -190px;
 
-
 }
 
+.footer_list {
+  flex-direction: column;
+}
 /* footer */
 
 
